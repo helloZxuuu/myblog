@@ -26,10 +26,12 @@ const Posts: React.FC<Posts> = ({ data, files }) => {
 export default Posts;
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const res = await axios.get("http://localhost:4000/getHomeBlogList");
+  const res = await fetch(`http://localhost:4000/getHomeBlogList`).then(
+    (data) => data.json()
+  );
   const files = await getFiles();
 
   return {
-    props: { data: res.data.data, files },
+    props: { data: res.data, files },
   };
 };
