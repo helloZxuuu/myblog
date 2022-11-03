@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import style from '../styles/Index.module.scss'
 import Layout from "../components/layout";
 import Seo from "../components/Seo";

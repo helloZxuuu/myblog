@@ -1,0 +1,43 @@
+.card {
+  border: 1px solid rgb(209 213 219 / 1);
+  border-radius: 5px;
+  margin: 0 0 1rem;
+  padding: 0.8rem 1.3rem;
+  cursor: pointer;
+  transition: all linear 80ms;
+
+  &:hover {
+    transform: translate(0, 0) rotate(0) skewX(0)
+      skewY(0) scaleX(1.02) scaleY(1.02);
+  }
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+  }
+
+  .time {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .content {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+  }
+
+  .actions {
+    display: flex;
+
+    div {
+      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

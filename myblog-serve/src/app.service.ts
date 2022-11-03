@@ -18,7 +18,7 @@ export class AppService {
 
   getHomeBlogList(): any {
     const res =  Mock.mock({
-      "data|5": [
+      "data|7": [
         {
           id: "@id",
           author: "@cname",
