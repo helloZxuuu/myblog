@@ -6,7 +6,22 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  getHello(): Record<string, any> {
+    const result = {
+      code: 200,
+      msg: '请求成功',
+      data: this.appService.getHello()
+    }
+    return result
+  }
+
+  @Get('getHomeBlogList')
+  getHomeBlogList(): any {
+    const result = {
+      code: 200,
+      msg: '请求成功',
+      data: this.appService.getHomeBlogList()
+    }
+    return result
   }
 }

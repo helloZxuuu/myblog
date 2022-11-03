@@ -1,0 +1,10 @@
+.styleLink {
+  display: inline-block;
+  border-bottom: 1px black dotted;
+  transition: all linear .1s;
+
+  &:hover {
+    font-size: 1.3rem;
+    border-bottom: 1px solid;
+  }
+}

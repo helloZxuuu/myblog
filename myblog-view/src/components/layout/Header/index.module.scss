@@ -1,0 +1,24 @@
+.header {
+  height: 4rem;
+  border-bottom: 1px solid black;
+}
+
+.navs {
+  height: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  a {
+    margin-right: 1rem;
+    font-weight: 500;
+
+    &:hover{
+      text-decoration: underline;
+      color: #00f70b;
+    }
+  }
+}
